@@ -1,12 +1,22 @@
-.top-bar{
+/* reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
+/* top bar */
+.top-bar{
     display:flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
     background:#eee;
     padding:10px;
-    gap: 20px;
+    gap:20px;
+    font-family:Arial;
 }
+
+/* timer box */
 #timer{
     background:black;
     color:white;
@@ -19,51 +29,113 @@
     text-align:center;
 }
 
+/* top button */
+.top-bar button{
+    background:black;
+    color:white;
+    border:none;
+    padding:6px 14px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:500;
+    transition:0.3s;
+    text-transform:uppercase;
+}
+
+.top-bar button:hover{
+    background:#c59d5f;
+}
+
+/* navbar */
 .nav-bar{
     display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
     background:black;
     color:white;
 }
-.nav-bar h2{
-    font-size: 24px;
+
+/* logo section */
+.logo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    line-height:1.2;
 }
 
-.nav-bar small{
-    font-size: 12px;
-    color: gray;
+/* logo image */
+.logo-icon img{
+    width:45px;
+    height:45px;
+    margin-bottom:5px;
 }
-ul{
+
+/* brand name */
+.logo h2{
+    margin:5px 0 0 0;
+    font-size:22px;
+    letter-spacing:4px;
+    font-family:serif;
+    text-transform:uppercase;
+    text-shadow:0px 0px 10px rgba(197,157,95,0.3);
+}
+
+/* tagline */
+.logo small{
+    font-size:11px;
+    color:#c59d5f;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+/* nav menu */
+.nav-bar ul{
     display:flex;
-    gap: 20px;
-    list-style: none;
+    gap:20px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    align-items:center;
 }
-ul li a{
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+
+/* nav links */
+.nav-bar ul li a{
+    text-decoration:none;
+    color:white;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    transition:0.3s;
+    border-bottom:2px solid transparent;
+    padding-bottom:4px;
 }
-ul li a:hover{
-      color: #c59d5f;
-    border-bottom: 2px solid white;
+
+/* hover effect */
+.nav-bar ul li a:hover{
+    color:#c59d5f;
+    border-bottom:2px solid #c59d5f;
 }
+
+/* icons container */
 .nav-icon{
-    display: flex;
-    gap: 20px;   
-    align-items: center;
+    display:flex;
+    gap:20px;
+    align-items:center;
 }
+
+/* icons */
 .nav-icon svg{
     width:20px;
     height:20px;
-    color:white;      
+    color:white;
     cursor:pointer;
-    
+    transition:0.3s;
 }
+
+/* icon hover */
 .nav-icon svg:hover{
-    transform: scale(1.1);
+    transform:scale(1.1);
     color:#c59d5f;
 }
