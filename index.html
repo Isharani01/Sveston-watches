@@ -7,19 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header>
     <div class="top-bar">
-      <p>Summer Sale</p> 
-      <div id="timer">00 : 00 : 00</div>
-      <button>upto 40% off</button>
+        <p>Summer Sale</p>
+        <div id="timer">00 : 00 : 00</div>
+        <button>upto 40% off</button>
     </div>
+
     <nav class="nav-bar">
         <div class="logo">
-    <div class="logo-icon">
-        <img src="./Assets/Images/logo.jpg" alt="Sveston Logo"></div>
+            <div class="logo-icon">
+                <img src="./Assets/Images/logo.jpg" alt="Sveston Logo">
+            </div>
             <h2>Sveston</h2>
             <small>Since 1978</small>
         </div>
+
         <ul>
             <li><a href="#">EID SALE</a></li>
             <li><a href="#">NEW ARRIVAL</a></li>
@@ -30,76 +34,189 @@
             <li><a href="#">FOR COUPLES</a></li>
             <li><a href="#">TRACK ORDER</a></li>
         </ul>
+
         <div class="nav-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-</svg>    
-</div>     
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+            </svg>
+        </div>
     </nav>
 </header>
-<div class="container">
-    <div class="filter-bar">
-    <p>FILTERS</p>
 
-    <div class="filters">
-        <span>Category</span>
-        <span>Price</span>
-        <span>Availability</span>
-        <span>Product Type</span>
+<div class="filter-bar">
+
+    <p class="filter-title">FILTERS</p>
+
+    <div class="filter-items">
+
+        <label>
+            <input type="checkbox" class="filter" value="smart">
+            SMART WATCHES (<span id="smartCount">0</span>)
+        </label>
+
+        <label>
+            <input type="checkbox" class="filter" value="watch">
+            WATCHES (<span id="watchCount">0</span>)
+        </label>
+
     </div>
-    <select>
-        <option>Featured</option>
-        <option>Price Low to High</option>
-        <option>Price High to Low</option>
-    </select>
-</div>
-</div>
-<div class="category">
 
-    <label>
-        <input type="checkbox" class="filter" value="smart">
-        SMART WATCHES (<span id="smartCount">0</span>)
-    </label>
+    <div class="filter-sort">
+        <select>
+            <option>Featured</option>
+            <option>Price Low to High</option>
+            <option>Price High to Low</option>
+        </select>
+    </div>
 
-    <label>
-        <input type="checkbox" class="filter" value="watch">
-        WATCHES (<span id="watchCount">0</span>)
-    </label>
 </div>
+
 <div class="product-grid">
 
-    <div class="card" data-category="smart">
-        <img src="./Assets/Images/watch1.jpg" alt="">
-        <h3>Smart Watch X</h3>
-        <p>Modern Fitness Watch</p>
-        <h4>Rs. 9,999</h4>
-        <button>Quick Buy</button>
+   <div class="card" data-category="smart">
+    <img src="./Assets/Images/watch1.jpg" alt="">
+    <h3 class="product-name">Dawn 1.0</h3>
+    <p class="product-type">Women's Stainless Steel</p>
+    <div class="price">
+        <span class="new">Rs. 9,999</span>
+        <span class="old">Rs. 13,999</span>
+        <span class="discount">28% OFF</span>
     </div>
-
-    <div class="card" data-category="watch">
-        <img src="./Assets/Images/watch2.jpg" alt="">
-        <h3>Classic Watch</h3>
-        <p>Luxury Leather Strap</p>
-        <h4>Rs. 5,999</h4>
-        <button>Quick Buy</button>
-    </div>
-
-    <div class="card" data-category="smart">
-        <img src="./Assets/Images/watch3.jpg" alt="">
-        <h3>Sport Smart Watch</h3>
-        <p>Water Resistant</p>
-        <h4>Rs. 12,999</h4>
-        <button>Quick Buy</button>
-    </div>
-
+    <button>Quick Buy</button>
 </div>
 
- <script src="script.js"></script>   
+<div class="card" data-category="watch">
+    <img src="./Assets/Images/watch2.jpg" alt="">
+    <h3 class="product-name">Orlena</h3>
+    <p class="product-type">Women's Stainless Steel</p>
+    <div class="price">
+        <span class="new">Rs. 6,799</span>
+        <span class="old">Rs. 9,499</span>
+        <span class="discount">28% OFF</span>
+    </div>
+    <button>Quick Buy</button>
+</div>
+
+<div class="card" data-category="smart">
+    <img src="./Assets/Images/watch3.jpg" alt="">
+    <h3 class="product-name">Velra</h3>
+    <p class="product-type">Women's Stainless Steel</p>
+    <div class="price">
+        <span class="new">Rs. 13,999</span>
+        <span class="old">Rs. 17,999</span>
+        <span class="discount">22% OFF</span>
+    </div>
+    <button>Quick Buy</button>
+</div>
+
+<div class="card" data-category="smart">
+    <img src="./Assets/Images/watch4.jpg" alt="">
+    <h3 class="product-name">Zoria</h3>
+    <p class="product-type">Women's Stainless Steel</p>
+    <div class="price">
+        <span class="new">Rs. 10,999</span>
+        <span class="old">Rs. 14,499</span>
+        <span class="discount">24% OFF</span>
+    </div>
+    <button>Quick Buy</button>
+</div>
+
+<div class="card" data-category="smart">
+    <img src="./Assets/Images/watch5.jpg" alt="">
+    <h3 class="product-name">Elva</h3>
+    <p class="product-type">Women's Stainless Steel</p>
+    <div class="price">
+        <span class="new">Rs. 9,499</span>
+        <span class="old">Rs. 12,999</span>
+        <span class="discount">27% OFF</span>
+    </div>
+    <button>Quick Buy</button>
+</div>
+
+<div class="card" data-category="smart">
+    <img src="./Assets/Images/watch6.jpg" alt="">
+    <h3 class="product-name">Nyra</h3>
+    <p class="product-type">Women's Stainless Steel</p>
+    <div class="price">
+        <span class="new">Rs. 8,999</span>
+        <span class="old">Rs. 11,999</span>
+        <span class="discount">25% OFF</span>
+    </div>
+    <button>Quick Buy</button>
+</div>
+
+<div class="card" data-category="smart">
+    <img src="./Assets/Images/watch7.jpg" alt="">
+    <h3 class="product-name">Arlina</h3>
+    <p class="product-type">Women's Stainless Steel</p>
+    <div class="price">
+        <span class="new">Rs. 12,299</span>
+        <span class="old">Rs. 15,999</span>
+        <span class="discount">23% OFF</span>
+    </div>
+    <button>Quick Buy</button>
+</div>
+
+<div class="card" data-category="smart">
+    <img src="./Assets/Images/watch8.jpg" alt="">
+    <h3 class="product-name">Sorelle</h3>
+    <p class="product-type">Women's Stainless Steel</p>
+    <div class="price">
+        <span class="new">Rs. 14,499</span>
+        <span class="old">Rs. 18,999</span>
+        <span class="discount">24% OFF</span>
+    </div>
+    <button>Quick Buy</button>
+</div>
+
+</div>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h3>Sveston</h3>
+            <p>Luxury watches for modern lifestyle. Quality, elegance and precision since 1978.</p>
+        </div>
+
+        <div class="footer-box">
+            <h4>Quick Links</h4>
+            <a href="#">Home</a>
+            <a href="#">New Arrival</a>
+            <a href="#">Smart Watches</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-box">
+            <h4>Customer Care</h4>
+            <a href="#">Track Order</a>
+            <a href="#">Return Policy</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="footer-box">
+            <h4>Contact</h4>
+            <p>Email: support@sveston.com</p>
+            <p>Phone: +92 300 1234567</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Sveston Watches. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
