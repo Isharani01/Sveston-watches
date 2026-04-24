@@ -139,3 +139,13 @@
     transform:scale(1.1);
     color:#c59d5f;
 }
+.category{
+    display: flex;
+    gap: 25px;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.category label{
+    cursor: pointer;
+}
